@@ -1,0 +1,7 @@
+<h1><%= @article.title %></h1>
+<%= link_to "🚫", article_path, method: :delete, data: {:confirm => 'Are you sure?'} %>
+<%= link_to "🖍", edit_article_path %>
+
+<p><%= @article.content %></p>
+
+<%= link_to "🏠", articles_path %>
